@@ -1,3 +1,7 @@
 {
-  "git.ignoreLimitWarning": true
+  "git.ignoreLimitWarning": true,
+  "editor.defaultFormatter": "Prisma.prisma",
+  "cSpell.words": [
+    "upsert"
+  ]
 }

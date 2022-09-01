@@ -1,8 +1,5 @@
 import { useForm } from "react-hook-form";
 
-// Better Erros (set, clear, display)
-// Have control over inputs
-
 interface LoginForm {
   username: string;
   password: string;
@@ -24,11 +21,9 @@ export default function Forms() {
     mode: "onChange",
   });
   const onValid = (data: LoginForm) => {
-    console.log("im valid bby");
     resetField("password");
   };
-  const onInvalid = (errors: FieldErrors) => {
-    console.log(errors);
+  const onInvalid = () => {
   };
   return (
     <form onSubmit={handleSubmit(onValid, onInvalid)}>
